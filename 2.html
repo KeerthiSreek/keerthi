@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthi - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 87px;
+            background-color: rgb(48, 48, 160);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a:hover {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a {
+            color: lavender;
+            font-size: 1.04rem;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+        .leftSection {
+            width: 34px;
+            margin: 30px 0;
+        }
+        .firstSection > div {
+            width: 30%;
+        }
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+        .leftSection {
+            font-size: 2rem;
+        }
+        .leftSection.btn{
+            padding:0px;
+background-color: aqua;
+        }
+        .purple {
+            color: aqua;
+        }
+        .secondSection {
+            margin: 50px;
+            text-align: center;
+        }
+
+        .text-gray {
+            color: gray;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px; /* Centers the line */
+        }
+        .box {
+            background: white;
+            width:80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-title{
+position: relative;
+top: 75px;
+width:150px;
+font-size: 14px;
+        }
+        .vertical-desc{
+position: relative;
+top: 86px;
+color: aqua;
+width: 150px;
+font-size: 9px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Keerthi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./">About</a></li>
+                    <li><a href="./">Skills</a></li>
+                    <li><a href="./">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Keerthi</span>
+                <div>I am a passionate </div>
+                <span id="element"></span>
+                <div class="button">
+                    <button-class="btn">resume</button-class>
+            
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="1508843.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="text-gray">What I have done so far</section>
+        <section class="secondSection">
+            <h1>Past Experience</h1>
+            <!-- Simple writable box -->
+            <div class="box">
+                <div class="vertical">
+                   <img class="image-top"src="images.png"alt="">
+                 <div class="vertical-title">study</div>
+                 <div class="vertical-desc">
+                    I pursued my schooling in The Ashram Mathss till my higher secondary with passing and 
+                    flying colors od education.
+                </div>
+                </div>
+                <div class="vertical">
+                <img class="image-top"src="download1.png"alt="">
+                <div class="vertical-title">college</div>
+                <div class="vertical-desc">I pursued my education of engineering in 
+                    sathyabama institue of scienec
+                     and technology in engineering</div></div>
+                     <div class="vertical">
+                        <img class="image-top"src="images.png"alt="">
+                      <div class="vertical-title">study</div>
+                      <div class="vertical-desc">
+                         I pursued my schooling in The Ashram Mathss till my higher secondary with passing and 
+                         flying colors od education.
+                     </div>
+                     </div>
+                     <div class="vertical">
+                        <img class="image-top"src="download1.png"alt="">
+                        <div class="vertical-title">college</div>
+                        <div class="vertical-desc">I pursued my education of engineering in 
+                            sathyabama institue of scienec
+                             and technology in engineering</div></div>
+                    <div class="vertical">
+                        <img class="image-top"src="download.png"alt="">
+                        <div class="vertical-title">job</div>
+                        <div class="vertical-desc">job description</div>
+                        <hr>
+                        <hr>
+
+                    </div>
+                
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Include Typed.js from a CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        // Initialize Typed.js for text animation
+        document.addEventListener("DOMContentLoaded", function () {
+            var typed = new Typed('#element', {
+                strings: ['web developer', 'designer', 'software developer'],
+                typeSpeed: 50,
+                backSpeed: 50, // Optional: add speed for backspacing effect
+                loop: true,    // Optional: loop animation
+            });
+        });
+    </script>
+</body>
+</html>
